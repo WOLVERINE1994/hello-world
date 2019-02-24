@@ -1,0 +1,8 @@
+list=['0','monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+i=0
+day=int(input("enter the day of the week:").strip().lower())
+while(i<=6):
+    if(list[day] in list):
+        print("day is :{}".format(list[day]))
+        i=i+1
+    break    
