@@ -1,0 +1,7 @@
+list=[2000,500,200,100,50,20,10,5]
+i=0
+amount=int(input("the maount:").strip().lower())
+while(i<=7):
+    print("{} notes are:{}".format(list[i],int(amount/list[i])))
+    amount=amount%list[i]
+    i=i+1
