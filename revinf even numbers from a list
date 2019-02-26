@@ -1,0 +1,16 @@
+#eliminatiing even numbers from a list of random numbers
+from random import randint
+list=[]
+i=0
+while(i<10):
+    a=randint(100,200)
+    list.append(a)
+    i=i+1
+print(list)   
+i=0
+while(i<len(list)):
+    if(list[i]%2==0):
+        list.remove(list[i])
+        continue
+    i=i+1
+print(list)    
