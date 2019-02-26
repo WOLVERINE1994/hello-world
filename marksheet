@@ -1,0 +1,25 @@
+#keeping the records of the marks of a student
+list=['maths','physics','chemistry']
+list1=[]
+i=0
+sums=0
+maximum=100
+while(i<len(list)):
+    marks=int(input("enter the marks:").strip().lower())
+    list1.append(marks)
+    print(list1)
+    i=i+1
+    if(marks>maximum):
+        print("enter the number out of 100 only")
+        break    
+for num in list1:
+    sums=sums+num
+print("percentage:{}".format(sums/100*100))
+if(sums/100*100>=90):
+    print("A GRADE")
+elif(sums/100*100>=80):
+    print("B GRADE")
+elif(sums/100*100>=70):
+    print("C GRADE")
+elif(sums/100*100>=60):
+    print("D GRADE")
