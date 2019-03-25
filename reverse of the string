@@ -1,0 +1,8 @@
+#reversing the string(ooption2)
+strings=input("enter the string")
+def reversings(strings):
+    i=len(strings)-1
+    while(i>=0):
+        print(strings[i],end="")
+        i=i-1
+reversings(strings)
