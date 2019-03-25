@@ -1,0 +1,9 @@
+#multiplication of all numbers in a list
+num=int(input("total elements:").lower().strip())
+num1=list(map(int,input("elements in list:").split()[:num]))
+def multiplication(num1):
+    multi=1
+    for i in num1:
+        multi=multi*i
+    return multi
+multiplication(num1)
