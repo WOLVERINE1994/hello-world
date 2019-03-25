@@ -1,0 +1,13 @@
+#even number from the given list
+from random import randint
+list=[]
+list1=[]
+for i in range(10):
+    list.append(randint(1,10))
+print(list)
+def evens(list):
+    for i in list:
+        if(i%2==0):
+            list1.append(i)
+    print(list1)
+evens(list)
