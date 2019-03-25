@@ -1,0 +1,14 @@
+#prime number  or not
+num=int(input("enter the number for check:"))
+if(num>1):
+    def primes(num):
+        for i in range(2,num):
+            if(num%i==0):
+                print("not prime")
+                print(i,"times",num//i,"is",num)
+                break
+        else:
+            print("prime number is here")
+else:
+    print("enter the number greater than 1")
+primes(num)
