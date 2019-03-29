@@ -1,0 +1,10 @@
+from random import randint
+list1=[]
+for i in range(10):
+    list1.append(randint(1,10))
+print(list1)
+def removing(list1):
+    num=int(input("enter the number to remove from the list:"))
+    list1=[i for i in list1 if i!=num]
+    print(list1)
+removing(list1)
