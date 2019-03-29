@@ -1,0 +1,16 @@
+#appending from the front
+num=int(input("total number of items in the list1:"))
+list1=[]
+for items in range(num):
+    items=int(input("enter the items in the list"))
+    list1.append(items)
+print(list1)
+def appending(list1):
+    list2=[]
+    num2=int(input("enter the total number of elmenet you want to add"))
+    for i in range(num2):
+        num1=int(input("enter the number you want to add in the list:"))
+        list2.append(num1)
+    list2.reverse()
+    print(list2 + list1)
+appending(list1)
